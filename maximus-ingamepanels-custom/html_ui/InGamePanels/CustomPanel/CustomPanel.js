@@ -92,7 +92,7 @@ class IngamePanelCustomPanel extends TemplateElement {
                 console.log('panelActive');
                 self.panelActive = true;
                 if (self.iframeElement) {
-                    self.iframeElement.src = 'https://www.ipify.org/';
+                    self.iframeElement.src = 'http://localhost:9000';
                 }
             });
             this.ingameUi.addEventListener("panelInactive", (e) => {
