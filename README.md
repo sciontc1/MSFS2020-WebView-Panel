@@ -1,12 +1,28 @@
+This repo itself is to be used as a template for other applications and further improvement. This allows merging and including of some applications which display already in a web browser however now they can be displayed directly in game and no requirement for windowed mode or the window loosing focus and going behind the sim window. 
+
+
+Created using the initial template provided by Maximus: https://github.com/bymaximus/msfs2020-toolbar-window-template Many thanks for his and the others work and documents and other mods which cans now be cross intigrated.
+
+
 Forked version for use as template to aid mod development:
 
-# msfs2020-toolbar-window-template
-Microsoft FlightSimulator 2020 Toolbar Extra Window Template, this example loads UI window with ipify.org website SINCE SKYVECTOR is now blocking their website being loaded from iframe “X-Frame-Options“ = “SAMEORIGIN“.
+# MSFS2020-WebView-Panel -
+Microsoft FlightSimulator 2020 Toolbar Extra Window Template, this example loads UI window with any web content you currently have accessible on http://localhost:9000 
+
+Change: Line 95 or CTRL+F 
+
+`self.iframeElement.src` 
+
+Append URL to suit:
+
+`msfs2020-toolbar-window-template-master\maximus-ingamepanels-custom\html_ui\InGamePanels\CustomPanel\CustomPanel.js`
 
 
-To build the SPB if you have changed UI panel template definition run `build.bat` or manually
+To Re-build the SPB if you have changed the URL run `build.bat` or manually
 
 `SDK\Tools\bin\fspackagetool.exe maximus-ingamepanels-custom\Build\maximus-ingamepanels-custom.xml -nomirroring`
+
+
 
 It will generate the SPB at `maximus-ingamepanels-custom\Build\Packages\maximus-ingamepanels-custom\Build` copy the SPB to `maximus-ingamepanels-custom\InGamePanels`.
 
