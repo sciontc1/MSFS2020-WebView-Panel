@@ -1,33 +1,36 @@
-This repo itself is to be used as a template for other applications and further improvement. This allows merging and including of some applications which display already in a web browser however now they can be displayed directly in game and no requirement for windowed mode or the window loosing focus and going behind the sim window. 
+# About: MSFS2020-WebView-Panel
+This repo itself is a template for other applications and further improvement however is functional with some mods "as is".
 
+This allows mods which run on a local server and output/display in a web browser to be displayed directly in game. Currently preconfigured to - "http://localhost:9000"
 
-Created using the initial template provided by Maximus: https://github.com/bymaximus/msfs2020-toolbar-window-template Many thanks for his and the others work and documents and other mods which cans now be cross intigrated.
+Created using the initial template provided by Maximus: https://github.com/bymaximus/msfs2020-toolbar-window-template Many thanks for their's and others work, documents, other mods which cans now be cross intigrated. 
 
-
-Forked version for use as template to aid mod development:
-
-# MSFS2020-WebView-Panel -
-Microsoft FlightSimulator 2020 Toolbar Extra Window Template, this example loads UI window with any web content you currently have accessible on http://localhost:9000 
-
-Change: Line 95 or CTRL+F and locate the following text and change the "http://localhost:9000"
+# Customising
+Change: CTRL+F and locate the following text or below element and change the "http://localhost:9000" URL to your specified site/URL/Port
 
 `self.iframeElement.src` 
 
-Append URL to suit:
+Append URL in file located at following path to suit:
 
 `msfs2020-toolbar-window-template-master\maximus-ingamepanels-custom\html_ui\InGamePanels\CustomPanel\CustomPanel.js`
 
 
-To Re-build the SPB if you have changed the URL run `build.bat` or manually
+# Generating package
+To Re-build the SPB if you have changed the URL or other settings/content and used this as a template 
 
-`SDK\Tools\bin\fspackagetool.exe maximus-ingamepanels-custom\Build\maximus-ingamepanels-custom.xml -nomirroring`
+run `build.bat` which will build the .spb package and create the required folder structure inside the "Build" directory 
+
+# Installing
+Copy the package to community folder
+
+Ensure you close and restart MSFS2020 to allow it to "install" the mod, which can be checked by viewing the content manager from within your profile in the main menu of the sim.
 
 
+# Addon mods:
 
-It will generate the SPB at `maximus-ingamepanels-custom\Build\Packages\maximus-ingamepanels-custom\Build` copy the SPB to `maximus-ingamepanels-custom\InGamePanels`.
+This fork was initially to allow the use of other mods as a default value instead of the original URL Maximus had included to make it more of a template ready to go with some mods as is, such as:
 
-Copy the package to community folder BUT DO NOT COPY the `maximus-ingamepanels-custom\Build` directory.
+* Lians MSFS2020 Google map VFR mod. : https://github.com/lian/msfs2020-go/releases
+* HankHank10's MSFS2020 Cockpit companion (requires changing URL and rebuilding package to to localhost:**5000**) : https://github.com/hankhank10/MSFS2020-cockpit-companion/releases/tag/0.1
 
-If you rebuild the SPB make sure to copy and update the relevant files/folders in your Community directory.
-
-Ensure you close and restart the sim to allow it to "install" the mode which can be checked by viewing the content manager from within your profile in the main menu of the sim.
+Will update with more as and when possible
