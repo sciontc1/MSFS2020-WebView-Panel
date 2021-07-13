@@ -39,6 +39,6 @@ This fork was initially to allow the use of other mods as a default value instea
 
 * Lians MSFS2020 Google map VFR mod. : https://github.com/lian/msfs2020-go/releases - custom HTML to resize the font to my preferences can be seen in the screenshots of this repo
 
-* HankHank10's MSFS2020 Cockpit companion (requires changing URL to "localhost:5000" and rebuilding SPB package via rnning build.bat) : https://github.com/hankhank10/MSFS2020-cockpit-companion/releases/tag/0.1
+* HankHank10's MSFS2020 Cockpit companion (requires changing URL to "localhost:5000" and rebuilding SPB package via running build.bat) : https://github.com/hankhank10/MSFS2020-cockpit-companion/releases/tag/0.1
 
 Will update with more as and when possible
