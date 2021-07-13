@@ -1,5 +1,5 @@
 # About: MSFS2020-WebView-Panel
-This repo itself is a template for other applications and further improvement however is functional with some mods "as is".
+This repo itself is a template to be used along side other applications/mods. Its implemented with the intentions of further improvement however is preconfigured and functional with some mods "as is".
 
 This allows mods which run on a local server and output/display in a web browser to be displayed directly in game. Currently preconfigured to - "http://localhost:9000"
 
