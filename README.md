@@ -23,7 +23,12 @@ To Re-build the SPB if you have changed the URL or other settings/content and us
 run `build.bat` which will build the .spb package and create the required folder structure inside the "Build" directory 
 
 # Installing
-Copy the package to community folder
+
+1. Download the .zip or release from this repo if available. - https://github.com/sciontc1/MSFS2020-WebView-Panel/archive/refs/heads/master.zip
+
+2. Extract "MSFS2020-WebView-Panel-master.zip"
+
+3. Copy the folder/package "maximus-ingamepanels-custom" from inside the "Build" folder to your community folder
 
 Ensure you close and restart MSFS2020 to allow it to "install" the mod, which can be checked by viewing the content manager from within your profile in the main menu of the sim.
 
@@ -32,7 +37,8 @@ Ensure you close and restart MSFS2020 to allow it to "install" the mod, which ca
 
 This fork was initially to allow the use of other mods as a default value instead of the original URL Maximus had included to make it more of a template ready to go with some mods as is, such as:
 
-* Lians MSFS2020 Google map VFR mod. : https://github.com/lian/msfs2020-go/releases
+* Lians MSFS2020 Google map VFR mod. : https://github.com/lian/msfs2020-go/releases - custom HTML to resize the font to my preferences can be seen in the screenshots of this repo
+
 * HankHank10's MSFS2020 Cockpit companion (requires changing URL and rebuilding package to to localhost:**5000**) : https://github.com/hankhank10/MSFS2020-cockpit-companion/releases/tag/0.1
 
 Will update with more as and when possible
