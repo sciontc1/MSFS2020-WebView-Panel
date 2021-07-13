@@ -3,9 +3,11 @@ This repo itself is a template for other applications and further improvement ho
 
 This allows mods which run on a local server and output/display in a web browser to be displayed directly in game. Currently preconfigured to - "http://localhost:9000"
 
-Created using the initial template provided by Maximus: https://github.com/bymaximus/msfs2020-toolbar-window-template Many thanks for their's and others work, documents, other mods which cans now be cross intigrated. 
+Created using the initial template provided by Maximus: https://github.com/bymaximus/msfs2020-toolbar-window-template Many thanks for their's and others work on the source. Currently most of the core files are still the original source from Maximus, however as this develops it may stray further away. 
 
-# Customising
+I'm considering creating a companion file to configure/modify the key elements/files required to generate the package file to allow others to create their own and make changes easier if its just to adjust the URL - in future the panel will ideally not be called "CustomPanel" but a relevant title for your use.
+
+# Customising / Changing / Configuring
 Change: CTRL+F and locate the following text or below element and change the "http://localhost:9000" URL to your specified site/URL/Port
 
 `self.iframeElement.src` 
